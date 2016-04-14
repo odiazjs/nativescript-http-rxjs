@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/usr/local/Cellar/android-sdk/24.4.1_1/extras/android/m2repository/com/android/support/support-annotations/23.2.0/support-annotations-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
+        <dex dex="/Users/oscardiaz/Desktop/NativeScript/Tradepacks/platforms/android/build/intermediates/pre-dexed/debug/support-annotations-23.2.0_1a4a9547e619960a5fc5e48490778b4588a1cadf.jar" />
+    </item>
+    <item
+        jar="/Users/oscardiaz/Desktop/NativeScript/Tradepacks/platforms/android/libs/nativescript.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="72b585c3baffa7cb9fbecc8dd37cd89a127f17f5">
+        <dex dex="/Users/oscardiaz/Desktop/NativeScript/Tradepacks/platforms/android/build/intermediates/pre-dexed/debug/nativescript_26e4c2b9b5d1dbe3dee32ad7acee38cf90a83b17.jar" />
+    </item>
+
+</items>

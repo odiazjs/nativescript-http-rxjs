@@ -1,0 +1,85 @@
+{
+  "name": "nativescript-angular",
+  "version": "0.0.37",
+  "description": "Bringing NativeScript and Angular 2 together. This project implements a renderer that lets you build native mobile apps with Angular using the NativeScript widgets.",
+  "homepage": "http://www.telerik.com",
+  "bugs": {
+    "url": "http://www.telerik.com"
+  },
+  "contributors": [
+    {
+      "name": "Hristo Deshev",
+      "email": "hristo.deshev@telerik.com"
+    }
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NativeScript/nativescript-angular.git"
+  },
+  "scripts": {},
+  "dependencies": {
+    "tns-core-modules": "^1.7.0",
+    "angular2": "2.0.0-beta.9",
+    "es6-shim": "^0.33.3",
+    "parse5": "1.4.2",
+    "punycode": "1.3.2",
+    "querystring": "0.2.0",
+    "url": "0.10.3",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "zone.js": "0.5.15"
+  },
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-contrib-copy": "0.8.0",
+    "grunt-contrib-clean": "0.6.0",
+    "grunt-shell": "1.1.2",
+    "grunt-file": "1.0.2",
+    "grunt-env": "0.4.4",
+    "grunt-ts": "5.0.0-beta.5",
+    "shelljs": "^0.5.3",
+    "typescript": "1.8.2"
+  },
+  "_id": "nativescript-angular@0.0.37",
+  "_shasum": "530fc368aa53fc5e80ab4a2e1b04e3782c93365a",
+  "_resolved": "https://registry.npmjs.org/nativescript-angular/-/nativescript-angular-0.0.37.tgz",
+  "_from": "nativescript-angular@0.0.37",
+  "_npmVersion": "3.7.1",
+  "_nodeVersion": "5.5.0",
+  "_npmUser": {
+    "name": "hdeshev",
+    "email": "hristo@deshev.com"
+  },
+  "dist": {
+    "shasum": "530fc368aa53fc5e80ab4a2e1b04e3782c93365a",
+    "tarball": "https://registry.npmjs.org/nativescript-angular/-/nativescript-angular-0.0.37.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "enchev",
+      "email": "vladimir.enchev@gmail.com"
+    },
+    {
+      "name": "erjangavalji",
+      "email": "erjan.gavalji@gmail.com"
+    },
+    {
+      "name": "hdeshev",
+      "email": "hristo@deshev.com"
+    },
+    {
+      "name": "nsndeck",
+      "email": "nedyalko.nikolov@telerik.com"
+    },
+    {
+      "name": "vakrilov",
+      "email": "alexander.vakrilov@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/nativescript-angular-0.0.37.tgz_1458575817106_0.1040165089070797"
+  },
+  "directories": {}
+}

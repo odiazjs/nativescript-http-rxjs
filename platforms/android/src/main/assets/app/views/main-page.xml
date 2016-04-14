@@ -1,0 +1,14 @@
+<ActionBar title="Custom Title" *ngIf="showActionBar"> 
+        <ActionItem *ngIf="show" text="action" (tap)="onTap()"></ActionItem>
+</ActionBar>
+
+<StackLayout class='card'>
+    <Button class="add-button" text='Get Posts' (tap)='getPosts($event)'></Button>
+    
+    <StackLayout *ngFor="#post of posts">
+        <DockLayout>
+            <Label text="{{ post.title }}"></Label>
+        </DockLayout>
+    </StackLayout>
+    
+</StackLayout>

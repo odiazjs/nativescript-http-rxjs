@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/oscardiaz/Desktop/NativeScript/Tradepacks/platforms/android/build/intermediates/res/merged/debug/drawable-nodpi-v4/splashscreen.9.png",
+        "source": "/Users/oscardiaz/Desktop/NativeScript/Tradepacks/platforms/android/src/main/res/drawable-nodpi/splashscreen.9.png"
+    },
+    {
+        "merged": "/Users/oscardiaz/Desktop/NativeScript/Tradepacks/platforms/android/build/intermediates/res/merged/debug/drawable-nodpi-v4/checkbox_checked.png",
+        "source": "/Users/oscardiaz/Desktop/NativeScript/Tradepacks/platforms/android/src/main/res/drawable-nodpi/checkbox_checked.png"
+    },
+    {
+        "merged": "/Users/oscardiaz/Desktop/NativeScript/Tradepacks/platforms/android/build/intermediates/res/merged/debug/drawable-nodpi-v4/checkbox_unchecked.png",
+        "source": "/Users/oscardiaz/Desktop/NativeScript/Tradepacks/platforms/android/src/main/res/drawable-nodpi/checkbox_unchecked.png"
+    }
+]
