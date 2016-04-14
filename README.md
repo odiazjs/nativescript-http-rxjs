@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NativeScript + AngularJS TodoMVC example
 
 This is a sample project implementing the famous TodoMVC example using NativeScript and AngularJS 2
@@ -33,3 +34,7 @@ or iOS...
 tns run ios
 ```
 ![](https://ga-beacon.appspot.com/UA-111455-24/nativescript/sample-ng-todomvc?pixel) 
+=======
+# nativescript-http-rxjs
+Simple Nativescript, Angular2 mobile app with http container using RxJs Observables.
+>>>>>>> 6f985d6bbfc771884931799ca98bcdb312569621
