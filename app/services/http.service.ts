@@ -3,9 +3,9 @@ import {Http, Response} from 'angular2/http';
 import {MockBackend} from 'angular2/http/testing';
 import {Observable} from 'rxjs/Rx';
 import 'rxjs/Rx';
-import {Post} from '../model/post';
 import {IHttpContract} from '../contracts/http.contract.ts'
 import {ResponseObject} from '.././responseObject';
+import {Post} from '../model/post'
 
 @Injectable()
 export class HttpService implements IHttpContract{
@@ -26,7 +26,7 @@ export class HttpService implements IHttpContract{
         
     }
     
-    Post (data : JSON) : Response {
+    Post (data : Post[]) : Response {
         return this.response
     }
     

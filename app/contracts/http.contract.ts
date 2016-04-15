@@ -7,7 +7,7 @@ import {ResponseObject} from '.././responseObject';
 export interface IHttpContract {
     
    Get () : Observable<ResponseObject>
-   Post (data : JSON) : Response
+   Post (data : any[]) : Response
    Delete (id : number) : Response
    
 }

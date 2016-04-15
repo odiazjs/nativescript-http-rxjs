@@ -20,17 +20,18 @@ import {Post} from './model/post';
 @Injectable()
 export class MainPage {
 
-    public httpService: HttpService;
-    public _url: string;
-    public posts: JSON;
-    public errorMessage: string;
+    public httpService: HttpService
+    public _url: string
+    public posts: Post[]
+    public errorMessage: string
     
     constructor(httpService: HttpService) {
-        this.httpService = httpService;
+        this.httpService = httpService
     }
     
-    getPosts(){
+    getPosts () {
         
+        this.posts = []
         this.httpService.Get()
                          .subscribe(
                             responseObject => this.posts = responseObject.result,
