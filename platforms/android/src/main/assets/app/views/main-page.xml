@@ -7,7 +7,10 @@
     
     <StackLayout *ngFor="#post of posts">
         <DockLayout>
-            <Label text="{{ post.title }}"></Label>
+            <Label text="{{ post.Id }}"></Label>
+            <Label text="{{ post.UserId }}"></Label>
+            <Label text="{{ post.Title }}"></Label>
+            <Label text="{{ post.Body }}"></Label>
         </DockLayout>
     </StackLayout>
     

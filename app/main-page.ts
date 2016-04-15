@@ -4,7 +4,7 @@ import {TextView} from 'ui/text-view';
 import {topmost} from 'ui/frame';
 import {nativeScriptBootstrap} from 'nativescript-angular/application';
 import {Inject, Component, View} from 'angular2/core';
-import {HttpService} from './services/http.service';
+import {PostService} from './services/post.service';
 import {Checkbox} from './checkbox';
 import {Page} from 'ui/page';
 import {Injectable} from 'angular2/core';
@@ -12,7 +12,7 @@ import {Post} from './model/post';
 
 @Component({
     selector: 'main',
-    providers: [HttpService],
+    providers: [PostService],
     directives: [Checkbox],
     templateUrl: './views/main-page.xml'
 })
@@ -20,25 +20,32 @@ import {Post} from './model/post';
 @Injectable()
 export class MainPage {
 
-    public httpService: HttpService
+    public postService: PostService
     public _url: string
     public posts: Post[]
     public errorMessage: string
     
-    constructor(httpService: HttpService) {
-        this.httpService = httpService
+    constructor(httpService: PostService) {
+        this.postService = httpService
     }
     
     getPosts () {
         
         this.posts = []
-        this.httpService.Get()
-                         .subscribe(
-                            responseObject => this.posts = responseObject.result,
+        this.postService.Get()
+                         .subscribe((responseObject) => {
+                                responseObject.result
+                                              .map((post) => {
+                                                  this.posts.push(new Post(
+                                                      post.userId, 
+                                                      post.id, 
+                                                      post.title, 
+                                                      post.body
+                                                  ))
+                                              })
+                            },
                             error => this.errorMessage = <any>error
                          )	
                                            
         }
-         
-
 }

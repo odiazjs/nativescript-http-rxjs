@@ -5,7 +5,7 @@ import {Post} from './model/post'
 
 export class ResponseObject {
     
-    public result : Post[]
+    public result : any
     public httpStatusCode : number
     
     constructor (httpResponse : Response) {
