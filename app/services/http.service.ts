@@ -19,10 +19,8 @@ export class HttpService implements IHttpContract{
     
     Get () : Observable<ResponseObject> {
 
-        let observable = this.http.get(this.url)
+        return this.http.get(this.url)
                                   .map(data => new ResponseObject(data))
-        
-        return observable
         
     }
     
