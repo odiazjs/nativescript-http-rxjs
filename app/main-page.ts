@@ -22,7 +22,7 @@ export class MainPage {
 
     public httpService: HttpService;
     public _url: string;
-    public posts: Post[];
+    public posts: JSON;
     public errorMessage: string;
     
     constructor(httpService: HttpService) {
@@ -31,9 +31,9 @@ export class MainPage {
     
     getPosts(){
         
-        this.httpService.get()
+        this.httpService.Get()
                          .subscribe(
-                            posts => this.posts = posts,
+                            responseObject => this.posts = responseObject.result,
                             error => this.errorMessage = <any>error
                          )	
                                            

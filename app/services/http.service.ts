@@ -4,28 +4,34 @@ import {MockBackend} from 'angular2/http/testing';
 import {Observable} from 'rxjs/Rx';
 import 'rxjs/Rx';
 import {Post} from '../model/post';
+import {IHttpContract} from '../contracts/http.contract.ts'
+import {ResponseObject} from '.././responseObject';
 
 @Injectable()
-export class HttpService {
+export class HttpService implements IHttpContract{
     
-    public url: string;
+    public url : string
+    public response : Response
     
     constructor (public http: Http) {
         this.url = 'http://jsonplaceholder.typicode.com/posts';
     }
     
-    get() {
+    Get () : Observable<ResponseObject> {
+
+        let observable = this.http.get(this.url)
+                                  .map(data => new ResponseObject(data))
         
-        return this.http.get(this.url)
-                        .map(response => <Post[]> response.json())
-                        .catch(this.handleError)
+        return observable
         
     }
     
-    private handleError (error: Response) {
-        console.error(error);
-        return Observable.throw(error.json().error || this.url + ' Server error');
+    Post (data : JSON) : Response {
+        return this.response
     }
-
+    
+    Delete (id : number) : Response {
+        return this.response
+    }
     
 }
